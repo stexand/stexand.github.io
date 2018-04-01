@@ -1,0 +1,574 @@
+/*Complile Bootstrap with Sass*/
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+
+/*===================Generic Css ======================= */
+$glavnaBoja: #129CF3
+$sectionColor: #fff
+body
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    padding: 0
+    color: white
+    overflow-x: hidden
+    overflow-y: scroll
+    .btn
+        border: 1px solid $glavnaBoja
+        width: 150px
+        height: 50px
+        background: transparent
+        border-radius: 5px
+        color: $glavnaBoja
+        text-transform: uppercase
+        font-size: 1.1rem
+        transition: all ease-in-out 700ms
+        -moz-transition: all ease-in-out 700ms
+        -o-transition: all ease-in-out 700ms
+        -webkit-transition: all ease-in-out 700ms
+        &:hover
+          color: #fff
+          background-color: $glavnaBoja
+          cursor: pointer
+a
+    background-color: red
+h1
+    text-transform: uppercase
+.circle
+    width: 5px
+    height: 5px
+    border: 1px solid #129CF3
+    border-radius: 50%
+    position: absolute
+.top
+    position: absolute
+    right: 0em
+    bottom: 0em
+    color: #129CF3
+    transition: all 500ms
+    -moz-transition: all 500ms
+    -o-transition: all 500ms
+    -webkit-transition: all 500ms
+    &:hover
+      cursor: pointer
+      transform: scale(1.2, 1.2)
+    .dart
+        width: 50px
+        height: 50px
+        position: absolute
+        bottom: -4rem
+        right: -1em
+a
+    text-decoration: none
+    color: #fff
+.section-title
+    color: #141823
+    position: relative
+    h2
+        
+    &::after
+      content: ""
+      height: 1px
+      width: 15%
+      position: absolute
+      background-color: $glavnaBoja
+      bottom: -10px
+      left: 43%
+.current
+    color: $glavnaBoja !important
+    &:focus
+      color: $glavnaBoja
+      background: transparent
+    &:hover
+      color: $glavnaBoja
+      background: transparent
+    
+    /*=========NavBar============*/
+
+
+          
+                  /*================Header-overlay==============*/ 
+.header
+    background-image: url('https://static.pexels.com/photos/33343/building-joy-planning-plans.jpg')
+    background-size: cover
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-attachment: fixed
+    font-family: 'Roboto', sans-serif
+    width: 100%
+    .navbar-default
+       background-color: transparent
+       z-index: 110
+       transition: all 1s
+       -moz-transition: all 1s
+       -webkit-transition: all 1s
+       -o-transition: all 1s
+    
+    .logo
+        box-sizing: border-box
+        margin-top: -1.5rem
+
+    .navbar-nav
+        li
+            a
+                color: #fff !important
+                text-transform: uppercase
+                transition: all 1s;
+                -moz-transition: all 1s
+                -o-transition: all 1s
+                -webkit-transition: all 1s
+                font-weight: 700
+                font-family: roboto
+                font-size: 1.5rem
+                
+                &:hover
+                  color: $glavnaBoja !important
+    .navbar-header
+        margin-top: 1em
+
+        .brojevi
+            display: inline
+            padding-top: 1rem
+            .header-broj
+                display: inline
+                color: #fff
+                font-size: 1.3rem
+                margin-top: 1rem
+                span
+                    text-transform: uppercase
+                .fa
+                    background-color: $glavnaBoja
+            .broj-two
+                padding-left: 1em
+                
+    
+ 
+  
+    .header-overlay
+        background-color: rgba(31, 31, 31, 0.75)
+        height: 100vh
+        .header-content
+            margin-top: 15%
+            color: #fff
+            font-weight: 700
+            margin-bottom: 10%
+            .header-quote
+                font-size: 4.8rem
+                padding-bottom: 2rem
+            .header-title
+                padding-bottom: 1rem
+                font-family: 'Indie Flower', cursive
+                font-size: 2.5rem
+                text-transform: uppercase
+                font-weight: 900
+                margin-left: 50px    
+
+                
+                      /*==============Usluge====================*/
+.usluge
+    width: 100%
+    background: url('../images/wall.jpeg')
+    background-attachment: fixed
+    background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    -webkit-background-size: cover
+    background-repeat: no-repeat
+    padding-top: 0px
+    color: #fff
+    
+    .header-overlay
+        background-color: rgba(31, 31, 31, 0.75)
+        height: 100%
+        color: #fff
+        padding-bottom: 90px
+    .usluge-title
+        margin-top: 90px
+        color: #fff
+    .usluge-img
+        border-radius: 50%
+        border: 1px solid $glavnaBoja
+        margin-top: 50px
+    .img1
+        background-size: cover
+
+    .img2
+
+    .img3
+
+        img
+            border-radius: 50%
+            margin-top: 2rem
+            width: 50%
+            height: 50%
+    .usluge-description
+        margin-top: 90px
+        color: #fff
+        font-size: 1.9rem
+        line-height: 150%
+        ul
+            display: flex
+            justify-items: center
+            align-items: center
+            flex-direction: column
+        li
+            width: 30%
+            text-align: center
+    .moleraj
+     
+        text-align: center
+    .stolarija
+        padding-top: 30px
+        text-align: center
+    .fasade
+        padding-top: 70px
+        text-align: center
+        
+                        /*=============Galerija Css=================*/
+        
+.galerija
+    width: 100%
+    background-image: url(/images/pozadina.jpg)
+    background-attachment: fixed
+    background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    -webkit-background-size: cover
+    background-repeat: no-repeat 
+    padding-top: 50px
+    .galerija-title
+        h4
+            margin-top: 5rem
+            margin-bottom: -3rem
+            font-size: 2rem
+            text-decoration: underline
+   
+    
+.carousel
+    margin-top: 70px
+    margin-bottom: 150px
+    .carousel-inner
+        width: 100%
+        height: 100%
+        border: 1px solid $glavnaBoja
+        .item
+            img
+                width: 100%
+                height: 100%
+    .strelica-levo
+        border-top: 15px solid transparent
+        border-bottom: 15px solid transparent
+        border-right: 15px solid #129CF3
+        position: absolute
+        top: 50%
+    .strelica-desno
+        border-top: 15px solid transparent
+        border-bottom: 15px solid transparent
+        border-left: 15px solid #129CF3
+        position: absolute
+        top: 50%
+        
+        
+    
+          
+
+                             /*============O nama===============*/
+.o-nama
+    width: 100%
+    background-image: url(/images/pozadina.jpg)
+    background-attachment: fixed
+    background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    -webkit-background-size: cover
+    background-repeat: no-repeat
+    padding-bottom: 110px
+    padding-top: 60px
+    .content
+        text-align: center
+        padding: 1em 2em
+        color: black
+        margin-top: 5em
+        width: 100%
+        font-weight: 700
+        .o-nama-title
+            margin-bottom: 100px
+        p
+            margin-top: 20px
+            line-height: 28px
+            font-size: 2rem
+
+    .why-us
+        color: black
+        padding: 1em 2em
+        text-align: center
+        margin-top: 5em
+        margin-top: 130px
+        .why-us-content
+            position: relative
+            padding-left: 50px
+            padding-top: 30px
+            font-size: 1.7rem
+        .title
+            padding-bottom: -20px
+            font-size: 2rem
+            font-weight: 700
+            
+
+            ::after
+              width: 100%
+              content: "***"
+              background-color: $glavnaBoja
+              height: 1px
+              display: block
+        .icon
+             position: absolute
+             top: 0
+             left: 0 
+             padding-top: 20px
+             width: 70px
+            
+        .icons
+            color: $glavnaBoja
+            width: 70px
+            height: 70px
+            padding: 1em
+        .icon1
+
+        .content-text
+            padding: 0em 2em 0em 0em
+        .text1
+                            /*================Kontakt==============*/
+.kontakt
+    width: 100%
+    background-image: url(/images/pozadina.jpg)
+    background-attachment: fixed
+    background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    -webkit-background-size: cover
+    background-repeat: no-repeat
+    padding-top: 50px
+    padding-bottom: 50px
+    display: flex
+    justify-content: center
+    .kontakt-box
+        display: flex
+        flex-direction: row
+        justify-content: space-around 
+        align-items: center
+        p
+            font-weight: 700
+        .icons2
+            color: $glavnaBoja
+            width: 70px
+    .kontakt-title h1
+        font-size: 2rem
+        padding-bottom: 2rem
+        padding-top: 1rem
+
+        
+                        /*===============Cenovnik===============*/
+        
+.cenovnik
+    width: 100%
+    border-top: 1px solid black
+    background: url('../images/bill.jpeg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    .header-overlay
+        background-color: rgba(31, 31, 31, 0.65)
+        padding-top: 90px
+        padding-bottom: 90px
+    .cenovnik-title
+        color: #fff
+    .table
+        color: #fff
+        border-radius: 5px 
+        padding: 0em 3em 0em 3em
+        width: 70%
+        height: 10px
+        margin-top: 40px
+        th, td
+            border: 1px solid $glavnaBoja
+            text-align: center
+            width: 50%
+            height: 10px
+            left: 50%
+        
+    .cenovnik-text
+        color: #fff
+        text-align: center
+        margin-top: 100px
+        h4
+            line-height: 140%
+                    /*=====================Footer===================*/
+            
+.footer
+    width: 100%
+    height: 5vh
+    background-color: #000
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    .copyright
+        width: 50%
+        padding-top: 2rem
+    .top
+        text-align: right
+        margin-top: 2rem
+        
+        /*For Tablets*/
+        
+@media only screen and (max-width: 992)
+    [class*="col-"]
+        width: 100%
+    
+            /*================For mobile devices====================*/
+    
+@media only screen and (max-width: 767px)
+    body
+        width: 100%
+    .bx-pager
+        display: none
+    .navbar-default
+        background-color: black !important
+        z-index: 9999 !important
+        .navbar-header
+            
+                
+            .navbar-toggle
+                margin-top: -.7rem
+                margin-right: 2rem
+        .navbar-nav
+            li
+                a
+                    color: #fff !important
+    .top
+        bottom: 12px
+        right: 5px
+    
+    .header-overlay
+        width: 100%
+        .header-content
+            margin-right: 800px
+            text-align: center
+            margin-bottom: 500px
+            .brojevi
+                width: 300px
+                display: block
+                height: 300px
+                margin-left: 2rem
+            img
+                margin-left: 100px
+                width: 150px
+                
+            .header-quote
+                margin-left: 40px
+                margin-top: -10px
+                width: 300px
+                font-size: 2.7rem !important
+            .header-broj
+                    font-size: 1.6rem
+                    margin-left: 3rem 
+    .o-nama
+        width: 100%
+        .content
+            margin-top: -3rem
+            .o-nama-title
+                margin-bottom: 50px
+            p
+                font-size: 1.5rem
+                line-height: 100%
+        .photo
+            display: none
+        .why-us
+            margin-left: -20px
+            margin-top: -10px
+            
+            .title 
+                font-weight: 700
+                margin-left: 2rem
+            .why-us-content
+               
+                font-size: 1.5rem
+                .content-text
+                    
+                    margin-top: 1rem
+    .usluge
+        width: 100vw
+        .usluge-title h1
+            margin-top: -40px
+        .usluge-img
+            display: none
+        .usluge-description
+            margin-top: 50px
+            font-size: 1.5rem
+            h1
+                font-size: 2rem
+                font-weight: 700
+        .stolarija
+            margin-top: -20px
+        .fasade
+            margin-top: -70px
+            padding-bottom: 5px
+    .galerija
+        margin: 0 5% 0 1%
+        h4
+            text-align: center
+        
+            
+    .cenovnik
+        width: 100%
+        .table
+            margin-left: 4em
+        .cenovnik-text h4
+            margin-bottom: 1em
+            font-size: 1em
+            margin-top: -3em
+    .kontakt
+        .kontakt-title h1
+            font-size: 1.4rem
+            margin-left: 1em
+            font-weight: 700
+        .kontakt-box
+            .facebook
+                display: none
+            .mail
+                display: none
+            p
+                font-weight: 700
+    .footer
+        width: 100%
+        height: 10vh
+        display: flex
+        .col-md-6
+            p
+                font-size: 1.5rem
+                display: inline
+                
+            
+        .text-center
+            justify-content: right
+        .top
+            margin-bottom: 1.5rem
+            margin-right: -3rem
+           
+            
+
+            
+          
+            
+            
+        
+
+
+                
+            
+        
+        
+        
+    
